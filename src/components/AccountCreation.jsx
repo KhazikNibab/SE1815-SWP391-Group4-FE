@@ -9,7 +9,7 @@ const AccountCreation = () => {
     fullName: '',
     email: ''
   });
-  
+
   const [generatedPassword, setGeneratedPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -60,7 +60,7 @@ const AccountCreation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       console.log('Creating account:', {
@@ -69,7 +69,7 @@ const AccountCreation = () => {
       });
       setIsSubmitting(false);
       alert('Tài khoản đã được tạo thành công!');
-      
+
       // Reset form
       setFormData({
         msnv: '',
